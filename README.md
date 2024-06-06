@@ -7,7 +7,6 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 * GNU Screen (C - 1987) (https://opensource.com/article/17/3/introduction-gnu-screen)
 * tmux (C - 2009) (https://github.com/tmux/tmux/wiki)
 * Zellij (Rust - 2019) (https://github.com/zellij-org/zellij)
-* Zeage (Go - 2020) (https://opensource.com/article/21/5/linux-terminal-multiplexer)
 * Tabs (Rust - 2018) (https://github.com/austinjones/tab-rs)
 
 # X based - Terminals support tabs / panes
