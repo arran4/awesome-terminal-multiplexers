@@ -13,6 +13,5 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 
 * konsole (KDE) (https://konsole.kde.org/): The default terminal emulator for the KDE desktop environment with built-in terminal multiplexing support.
 * terminator (https://gnome-terminator.org/): A terminal emulator specifically designed for terminal multiplexing, offering features for managing tabs and panes.
-* qtmux (https://gstreamer.freedesktop.org/documentation/isomp4/qtmux.html): A tiling window manager for terminal multiplexers, offering a unique layout approach. (GUI-based)
 * shifter (https://electronics.stackexchange.com/questions/244129/barrel-shifter-using-multiplexer-how-to-go-about-it): A Wayland-based terminal multiplexer written in Rust, offering a modern visual experience.
 * Wez's Terminal (https://github.com/wez/wezterm): GPU-accelerated cross-platform terminal emulator and multiplexer
