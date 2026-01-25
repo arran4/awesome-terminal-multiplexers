@@ -1,0 +1,67 @@
+name: Monthly Release
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          latest_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+          if [ -z "$latest_tag" ]; then
+            echo "No tags found. Initial release."
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            change_count=$(git rev-list $latest_tag..HEAD --count)
+            if [ "$change_count" -gt 0 ]; then
+              echo "Changes detected since $latest_tag."
+              echo "changed=true" >> $GITHUB_OUTPUT
+            else
+              echo "No changes since $latest_tag."
+              echo "changed=false" >> $GITHUB_OUTPUT
+            fi
+          fi
+
+      - name: Get Date
+        if: steps.check_changes.outputs.changed == 'true'
+        id: date
+        run: echo "date=$(date +'%Y-%b')" >> $GITHUB_OUTPUT
+
+      - name: Install Dependencies
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended
+
+      - name: Generate Artifacts
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          pandoc README.md -o README.html
+          pandoc README.md -o README.pdf
+
+      - name: Create Release
+        if: steps.check_changes.outputs.changed == 'true'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.date.outputs.date }}
+          name: Release ${{ steps.date.outputs.date }}
+          body: Monthly release of Awesome Terminal Multiplexers.
+          files: |
+            README.md
+            README.html
+            README.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

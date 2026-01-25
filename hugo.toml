@@ -1,0 +1,4 @@
+baseURL = "https://arran4.github.io/awesome-terminal-multiplexers/"
+languageCode = "en-us"
+title = "Awesome Terminal Multiplexers"
+theme = []
