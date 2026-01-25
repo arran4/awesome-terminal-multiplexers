@@ -14,13 +14,17 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 * **neercs** (C - 2007) (https://sourceforge.net/projects/neercs/): A GNU Screen workalike with window thumbnailing and graphical animated screensavers, supports 3D console switching.
 * **splitvt** (C - 1990s) (https://manpages.debian.org/stretch/splitvt/splitvt.1.en.html): A split terminal utility.
 * **Twin ("Text mode WINdow environment")** (C - 1999) (https://github.com/cosmos72/twin): A full-fledged window manager for text windows, initially started as an MS-DOS project and later ported to Linux.
+* **3mux** (Go - 2018) (https://github.com/aaronjanse/3mux): Terminal multiplexer inspired by i3.
+* **abduco** (C - 2014) (https://github.com/martanne/abduco): Provides session management i.e. it allows programs to be run independently from their controlling terminal.
+* **dtach** (C - 2004) (https://github.com/crigler/dtach): A simple program that emulates the detach feature of screen.
 
 ### X-based - Terminals supporting tabs/panes
 
 * **konsole** (C++ - KDE) (https://konsole.kde.org/): The default terminal emulator for the KDE desktop environment with built-in terminal multiplexing support.
 * **terminator** (Python - GNOME) (https://gnome-terminator.org/): A terminal emulator specifically designed for terminal multiplexing, offering features for managing tabs and panes.
-* **shifter** (Rust - 2020s) (https://electronics.stackexchange.com/questions/244129/barrel-shifter-using-multiplexer-how-to-go-about-it): A Wayland-based terminal multiplexer written in Rust, offering a modern visual experience.
 * **Wez's Terminal** (Rust - 2017) (https://github.com/wez/wezterm): GPU-accelerated cross-platform terminal emulator and multiplexer.
+* **Kitty** (Python/C - 2017) (https://sw.kovidgoyal.net/kitty/): GPU-based terminal emulator with native tiling and window management.
+* **Tilix** (D - 2015) (https://gnunn1.github.io/tilix-web/): A tiling terminal emulator for Linux using GTK+ 3.
 
 ### Historical / Proprietary
 
