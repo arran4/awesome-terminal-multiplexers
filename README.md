@@ -29,3 +29,9 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 ### Historical / Proprietary
 
 * **TD/SMP** (Proprietary - DEC VT330/340): Introduced by DEC on their VT330/340 terminals, TD/SMP was proprietary and only widely supported by their own terminal servers.
+
+## License
+
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, the maintainers have waived all copyright and related or neighboring rights to this work.
