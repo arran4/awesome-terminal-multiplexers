@@ -17,6 +17,8 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 * **3mux** (Go - 2018) (https://github.com/aaronjanse/3mux): Terminal multiplexer inspired by i3.
 * **abduco** (C - 2014) (https://github.com/martanne/abduco): Provides session management i.e. it allows programs to be run independently from their controlling terminal.
 * **dtach** (C - 2004) (https://github.com/crigler/dtach): A simple program that emulates the detach feature of screen.
+* **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
+* **vtm** (C++ - 2019) (https://github.com/directvt/vtm): A virtual terminal multiplexer that creates a text-based desktop.
 
 ### X-based - Terminals supporting tabs/panes
 
