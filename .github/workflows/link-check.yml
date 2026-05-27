@@ -17,5 +17,5 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v2.0.2
         with:
-          args: --verbose --no-progress './**/*.md'
+          args: --verbose --no-progress --exclude "https://sourceforge.net/projects/neercs/" './**/*.md'
           fail: true
