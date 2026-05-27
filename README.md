@@ -27,7 +27,7 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 * **konsole** (C++ - KDE) (https://konsole.kde.org/): The default terminal emulator for the KDE desktop environment with built-in terminal multiplexing support.
 * **terminator** (Python - GNOME) (https://gnome-terminator.org/): A terminal emulator specifically designed for terminal multiplexing, offering features for managing tabs and panes.
 * **Tilix** (D - 2015) (https://gnunn1.github.io/tilix-web/): A tiling terminal emulator for Linux using GTK+ 3.
-* **Wez's Terminal** (Rust - 2017) (https://github.com/wez/wezterm): GPU-accelerated cross-platform terminal emulator and multiplexer.
+* **WezTerm** (Rust - 2017) (https://github.com/wez/wezterm): GPU-accelerated cross-platform terminal emulator and multiplexer.
 
 ### Historical / Proprietary
 
