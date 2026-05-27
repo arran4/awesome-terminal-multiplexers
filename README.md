@@ -30,6 +30,10 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 
 * **TD/SMP** (Proprietary - DEC VT330/340): Introduced by DEC on their VT330/340 terminals, TD/SMP was proprietary and only widely supported by their own terminal servers.
 
+### Utilities 
+
+* **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
+
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
