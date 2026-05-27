@@ -2,12 +2,9 @@
 
 This list provides a curated selection of terminal multiplexers. Please contribute if you can.
 
-### Featured
-
-* **Byobu** (Shell - 2009) (https://www.byobu.org/): A profile and configuration utility for GNU Screen and tmux.
-
 ### Terminal-based
 
+* **Byobu** (Shell - 2009) (https://www.byobu.org/): Open source text-based window manager and terminal multiplexer
 * **3mux** (Go - 2018) (https://github.com/aaronjanse/3mux): Terminal multiplexer inspired by i3.
 * **abduco** (C - 2014) (https://github.com/martanne/abduco): Provides session management i.e. it allows programs to be run independently from their controlling terminal.
 * **dtach** (C - 2004) (https://github.com/crigler/dtach): A simple program that emulates the detach feature of screen.
