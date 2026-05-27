@@ -9,6 +9,7 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 * **abduco** (C - 2014) (https://github.com/martanne/abduco): Provides session management i.e. it allows programs to be run independently from their controlling terminal.
 * **dtach** (C - 2004) (https://github.com/crigler/dtach): A simple program that emulates the detach feature of screen.
 * **dvtm** (C - 2007) (https://github.com/martanne/dvtm): Tiling window management for the console.
+* **FbTerm** (C++ - 2008) (https://code.google.com/archive/p/fbterm/): A fast framebuffer based terminal emulator for Linux with multiplexing capabilities.
 * **GNU Screen** (C - 1987) (https://opensource.com/article/17/3/introduction-gnu-screen): The prototypical terminal multiplexer.
 * **mtm** (C - 2014) (https://github.com/deadpixi/mtm): Billed as "perhaps the smallest useful terminal multiplexer in the world".
 * **neercs** (C - 2007) (https://sourceforge.net/projects/neercs/): A GNU Screen workalike with window thumbnailing and graphical animated screensavers, supports 3D console switching.
