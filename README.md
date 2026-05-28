@@ -14,6 +14,7 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 * **neercs** (C - 2007) (https://sourceforge.net/projects/neercs/): A GNU Screen workalike with window thumbnailing and graphical animated screensavers, supports 3D console switching.
 * **splitvt** (C - 1990s) (https://manpages.debian.org/stretch/splitvt/splitvt.1.en.html): A split terminal utility.
 * **tab** (Rust - 2018) (https://github.com/austinjones/tab-rs): A terminal multiplexer.
+* **term39** (Rust - 2025) (https://github.com/alejandroqh/term39): A modern, retro-styled terminal multiplexer inspired by Norton Disk Doctor (MS-DOS)
 * **tmux** (C - 2009) (https://github.com/tmux/tmux/wiki): A modern GNU Screen workalike, released in 2007; it is BSD-licensed, allows multiple panes (with optional Xterm mouse support), and has a scriptable command interface.
 * **Twin ("Text mode WINdow environment")** (C - 1999) (https://github.com/cosmos72/twin): A full-fledged window manager for text windows, initially started as an MS-DOS project and later ported to Linux.
 * **Zellij** (Rust - 2019) (https://github.com/zellij-org/zellij): A modern terminal workspace with batteries included.
