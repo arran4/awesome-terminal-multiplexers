@@ -4,9 +4,10 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 
 ### Terminal-based
 
-* **Byobu** (Shell - 2009) (https://www.byobu.org/): Open source text-based window manager and terminal multiplexer
 * **3mux** (Go - 2018) (https://github.com/aaronjanse/3mux): Terminal multiplexer inspired by i3.
 * **abduco** (C - 2014) (https://github.com/martanne/abduco): Provides session management i.e. it allows programs to be run independently from their controlling terminal.
+* **Boo** (Zig - 2024) (https://github.com/coder/boo): A GNU screen style terminal multiplexer built on libghostty.
+* **Byobu** (Shell - 2009) (https://www.byobu.org/): Open source text-based window manager and terminal multiplexer
 * **dtach** (C - 2004) (https://github.com/crigler/dtach): A simple program that emulates the detach feature of screen.
 * **dvtm** (C - 2007) (https://github.com/martanne/dvtm): Tiling window management for the console.
 * **GNU Screen** (C - 1987) (https://opensource.com/article/17/3/introduction-gnu-screen): The prototypical terminal multiplexer.
@@ -15,7 +16,9 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 * **splitvt** (C - 1990s) (https://manpages.debian.org/stretch/splitvt/splitvt.1.en.html): A split terminal utility.
 * **tab** (Rust - 2018) (https://github.com/austinjones/tab-rs): A terminal multiplexer.
 * **term39** (Rust - 2025) (https://github.com/alejandroqh/term39): A modern, retro-styled terminal multiplexer inspired by Norton Disk Doctor (MS-DOS)
+* **tmate** (C - 2013) (https://github.com/tmate-io/tmate): Instant Terminal Sharing.
 * **tmux** (C - 2009) (https://github.com/tmux/tmux/wiki): A modern GNU Screen workalike, released in 2007; it is BSD-licensed, allows multiple panes (with optional Xterm mouse support), and has a scriptable command interface.
+* **TUIOS** (Go - 2025) (https://github.com/Gaurav-Gosain/tuios): Terminal UI OS (Terminal Multiplexer).
 * **Twin ("Text mode WINdow environment")** (C - 1999) (https://github.com/cosmos72/twin): A full-fledged window manager for text windows, initially started as an MS-DOS project and later ported to Linux.
 * **Zellij** (Rust - 2019) (https://github.com/zellij-org/zellij): A modern terminal workspace with batteries included.
 
@@ -23,6 +26,8 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 
 * **Kitty** (Python/C - 2017) (https://sw.kovidgoyal.net/kitty/): GPU-based terminal emulator with native tiling and window management.
 * **konsole** (C++ - KDE) (https://konsole.kde.org/): The default terminal emulator for the KDE desktop environment with built-in terminal multiplexing support.
+* **Okena** (Rust - 2024) (https://github.com/contember/okena): A fast, native terminal multiplexer built in Rust with GPUI.
+* **Seance** (Zig - 2024) (https://github.com/no1msd/seance): A scrolling terminal multiplexer that tracks your AI coding agents.
 * **terminator** (Python - GNOME) (https://gnome-terminator.org/): A terminal emulator specifically designed for terminal multiplexing, offering features for managing tabs and panes.
 * **Tilix** (D - 2015) (https://gnunn1.github.io/tilix-web/): A tiling terminal emulator for Linux using GTK+ 3.
 * **WezTerm** (Rust - 2017) (https://github.com/wez/wezterm): GPU-accelerated cross-platform terminal emulator and multiplexer.
