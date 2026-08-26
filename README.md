@@ -40,6 +40,7 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 
 * **Terminal Workspace** (TypeScript/Electron - 2026) (https://github.com/EvanAI0331/terminal-workspace): A macOS desktop workspace for managing multiple project PTY terminals, saved launch commands, and project inspection.
 * **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
+* **Mobile SSH** (Java/Swift - 2026) (https://mobile-ssh.github.io): An Android and iOS SSH client with tmux, Zellij and herdr session managers, for listing, attaching to and driving multiplexer sessions on remote servers from a phone.
 
 ## License
 
