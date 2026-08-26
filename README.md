@@ -14,6 +14,7 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 * **GNU Screen** (C - 1987) (https://opensource.com/article/17/3/introduction-gnu-screen): The prototypical terminal multiplexer.
 * **mtm** (C - 2014) (https://github.com/deadpixi/mtm): Billed as "perhaps the smallest useful terminal multiplexer in the world".
 * **neercs** (C - 2007) (https://sourceforge.net/projects/neercs/): A GNU Screen workalike with window thumbnailing and graphical animated screensavers, supports 3D console switching.
+* **pymux** (Python - 2014) (https://github.com/prompt-toolkit/pymux): A terminal multiplexer (like tmux) in Python.
 * **splitvt** (C - 1990s) (https://manpages.debian.org/stretch/splitvt/splitvt.1.en.html): A split terminal utility.
 * **tab** (Rust - 2018) (https://github.com/austinjones/tab-rs): A terminal multiplexer.
 * **term39** (Rust - 2025) (https://github.com/alejandroqh/term39): A modern, retro-styled terminal multiplexer inspired by Norton Disk Doctor (MS-DOS)
@@ -21,6 +22,9 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 * **tmux** (C - 2009) (https://github.com/tmux/tmux/wiki): A modern GNU Screen workalike, released in 2007; it is BSD-licensed, allows multiple panes (with optional Xterm mouse support), and has a scriptable command interface.
 * **TUIOS** (Go - 2025) (https://github.com/Gaurav-Gosain/tuios): Terminal UI OS (Terminal Multiplexer).
 * **Twin ("Text mode WINdow environment")** (C - 1999) (https://github.com/cosmos72/twin): A full-fledged window manager for text windows, initially started as an MS-DOS project and later ported to Linux.
+* **vtm** (C++ - 2019) (https://github.com/directvt/vtm): A virtual terminal multiplexer and text-based desktop environment.
+* **VWM** (C - 2007) (https://sourceforge.net/projects/vwm/): A window manager and user-interface for the console. Its extensible design allows for easy development of native applications as shared-library plugins.
+* **vwm** (C - 2015) (https://github.com/TragicWarrior/vwm): Virtual window manager for the terminal.
 * **Zellij** (Rust - 2019) (https://github.com/zellij-org/zellij): A modern terminal workspace with batteries included.
 
 ### X-based - Terminals supporting tabs/panes
@@ -39,6 +43,7 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 
 ### Utilities 
 
+* **dekit (formerly mprocs)** (Rust - 2021) (https://github.com/pvolok/dekit): A PTY-backed TUI process manager for running and interacting with multiple commands in parallel.
 * **Terminal Workspace** (TypeScript/Electron - 2026) (https://github.com/EvanAI0331/terminal-workspace): A macOS desktop workspace for managing multiple project PTY terminals, saved launch commands, and project inspection.
 * **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
 
