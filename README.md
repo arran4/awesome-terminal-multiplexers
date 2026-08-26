@@ -42,7 +42,7 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 
 ### Utilities 
 
-* **dekit (formerly mprocs)** (Rust - 2021) (https://github.com/pvolok/dekit): A TUI process manager for running multiple commands in parallel, viewing their output separately, and interacting with individual processes; formerly known as mprocs.
+* **dekit (formerly mprocs)** (Rust - 2021) (https://github.com/pvolok/dekit): A PTY-backed TUI process manager for running and interacting with multiple commands in parallel.
 * **Terminal Workspace** (TypeScript/Electron - 2026) (https://github.com/EvanAI0331/terminal-workspace): A macOS desktop workspace for managing multiple project PTY terminals, saved launch commands, and project inspection.
 * **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
 
