@@ -1,6 +1,8 @@
 ## Awesome Terminal Multiplexers
 
-This list provides a curated selection of terminal multiplexers. Please contribute if you can. Note that we do not support terminals in general, unless the terminal has an integration with one or more terminal multiplexers, or a tui mode.
+This list provides a curated selection of terminal multiplexers. Please contribute if you can.
+
+Note that we do not support terminals in general, unless the terminal has an integration with one or more terminal multiplexers, or a tui mode.
 
 ### Terminal-based
 
