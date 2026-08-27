@@ -7,10 +7,10 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 To maintain focus, this list adheres to the following criteria:
 
 * **Core Multiplexers:** Must actively create/manage pseudo-terminals (PTYs) and provide session management or meaningful multiplexing behavior around them.
-* **Graphical/Emulators:** Terminal emulators or graphical programs are included only if they dynamically manage PTYs natively with built-in multiplexing (e.g., tabs, panes, persistent sessions).
+* **Graphical/Emulators:** Terminal emulators or graphical programs (X/Wayland/Windows/macOS) are included only if they dynamically manage PTYs natively with built-in multiplexing that provides true detach/reattach capabilities (not just simple tabs).
 * **Utilities:** Software that configures, controls, or supports qualifying multiplexers without managing PTYs directly (e.g., session managers) are grouped in the `Utilities` section.
 * **Technically Valid:** Software with secondary or embedded multiplexing capabilities may be listed under a distinct section noting technical relevance, rather than primary purpose.
-* **Out of Scope:** General terminal tools (plain emulators, simple shells, TUIs) lacking direct PTY management or multiplexer support are not included.
+* **Out of Scope:** General terminal tools (plain emulators, simple shells, TUIs) lacking direct PTY management, true detach/reattach capabilities, or multiplexer support are not included.
 
 ### Terminal-based
 
