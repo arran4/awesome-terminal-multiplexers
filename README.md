@@ -2,22 +2,15 @@
 
 This list provides a curated selection of terminal multiplexers. Please contribute if you can.
 
-### Scope and Inclusion Criteria
+### Scope / inclusion criteria
 
-To maintain focus, this list adheres to the following criteria:
+To qualify, terminal-based software must directly and dynamically manage PTYs or equivalent terminal sessions. Graphical software must additionally support terminal sessions that can remain alive independently of the graphical frontend and later be reattached. Merely providing terminal tabs/panes or wrapping another multiplexer is insufficient.
 
-* **Terminal multiplexers:** Must directly manage PTYs and provide genuine session multiplexing, persistence, or detach/reattach behaviour.
-* **GUI applications:** Held to a much higher bar. Tabs, panes, embedded terminals, workspace restoration, remote persistence, or multiple PTYs alone do not qualify.
-* **Utilities:** May be included when they directly configure, control, restore, or automate a qualifying terminal multiplexer.
-* **Non-primary-purpose software:** May be listed separately only if it independently provides qualifying terminal-multiplexing functionality.
-* **Out of scope:** General terminal emulators, IDEs/editors, SSH/remote-access clients, screen-sharing/remote-desktop software, shells, TUIs, and similar tools whose apparent persistence or multiplexing comes from ordinary UI features or external session infrastructure.
-
-### Terminal-based
+### Terminal-based multiplexers
 
 * **3mux** (Go - 2018) (https://github.com/aaronjanse/3mux): Terminal multiplexer inspired by i3.
-* **abduco** (C - 2014) (https://github.com/martanne/abduco): Provides session management i.e. it allows programs to be run independently from their controlling terminal.
+* **abduco** (C - 2014) (https://github.com/martanne/abduco): PTY-backed session manager supporting persistent sessions and detach/reattach; commonly paired with dvtm for pane/window management.
 * **Boo** (Zig - 2024) (https://github.com/coder/boo): A GNU screen style terminal multiplexer built on libghostty.
-* **Byobu** (Shell - 2009) (https://www.byobu.org/): Open source text-based window manager and terminal multiplexer
 * **dtach** (C - 2004) (https://github.com/crigler/dtach): A simple program that emulates the detach feature of screen.
 * **dvtm** (C - 2007) (https://github.com/martanne/dvtm): Tiling window management for the console.
 * **FbTerm** (C++ - 2008) (https://code.google.com/archive/p/fbterm/): A fast framebuffer based terminal emulator for Linux with multiplexing capabilities.
@@ -37,23 +30,22 @@ To maintain focus, this list adheres to the following criteria:
 * **vwm** (C - 2015) (https://github.com/TragicWarrior/vwm): Virtual window manager for the terminal.
 * **Zellij** (Rust - 2019) (https://github.com/zellij-org/zellij): A modern terminal workspace with batteries included.
 
-### X-based - Terminals supporting tabs/panes
+### Graphical / detachable multiplexers
 
-* **konsole** (C++ - KDE) (https://konsole.kde.org/): The default terminal emulator for the KDE desktop environment with built-in terminal multiplexing support.
-* **Okena** (Rust - 2024) (https://github.com/contember/okena): A fast, native terminal multiplexer built in Rust with GPUI.
-* **Seance** (Zig - 2024) (https://github.com/no1msd/seance): A scrolling terminal multiplexer that tracks your AI coding agents.
-* **terminator** (Python - GNOME) (https://gnome-terminator.org/): A terminal emulator specifically designed for terminal multiplexing, offering features for managing tabs and panes.
-* **WezTerm** (Rust - 2017) (https://github.com/wez/wezterm): GPU-accelerated cross-platform terminal emulator and multiplexer.
+* **WezTerm** (Rust - 2017) (https://github.com/wez/wezterm): Terminal emulator with a separate multiplexer/server architecture supporting reconnectable multiplexing domains.
 
-### Historical / Proprietary
+### Technically valid, but not primary purpose
 
-* **TD/SMP** (Proprietary - DEC VT330/340): Introduced by DEC on their VT330/340 terminals, TD/SMP was proprietary and only widely supported by their own terminal servers.
-
-### Utilities 
+Some applications satisfy the technical definition of terminal multiplexing even though multiplexing is not their primary purpose. These are listed separately to keep the main sections focused without arbitrarily excluding technically valid implementations.
 
 * **dekit (formerly mprocs)** (Rust - 2021) (https://github.com/pvolok/dekit): A PTY-backed TUI process manager for running and interacting with multiple commands in parallel.
-* **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
-* **tmuxp** (Python - 2013) (https://github.com/tmux-python/tmuxp): A configuration and session manager for tmux, built on libtmux.
+* **GNU Emacs** (C/Emacs Lisp - 1985) (https://www.gnu.org/software/emacs/): Can dynamically create PTY-backed terminal subprocesses/buffers and expose multiple terminal sessions, though its primary purpose is the Emacs editor/environment.
+* **Neovim** (C/Lua - 2014) (https://neovim.io/): Terminal buffers use its PTY/job infrastructure and can be created dynamically, but its primary purpose is text editing.
+* **Vim** (C - 1991) (https://www.vim.org/): When built with terminal support it can dynamically create and manage terminal jobs backed by PTYs, exposing multiple terminal sessions, though its primary purpose is text editing.
+
+### Historical / proprietary
+
+* **TD/SMP** (Proprietary - DEC VT330/340): Introduced by DEC on their VT330/340 terminals, TD/SMP was proprietary and only widely supported by their own terminal servers.
 
 ## License
 
