@@ -1,6 +1,6 @@
 ## Awesome Terminal Multiplexers
 
-This list provides a curated selection of terminal multiplexers. Please contribute if you can.
+This list provides a curated selection of terminal multiplexers. Please contribute if you can. Note that we do not support terminals in general, unless the terminal has an integration with one or more terminal multiplexers, or a tui mode.
 
 ### Terminal-based
 
@@ -29,12 +29,10 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 
 ### X-based - Terminals supporting tabs/panes
 
-* **Kitty** (Python/C - 2017) (https://sw.kovidgoyal.net/kitty/): GPU-based terminal emulator with native tiling and window management.
 * **konsole** (C++ - KDE) (https://konsole.kde.org/): The default terminal emulator for the KDE desktop environment with built-in terminal multiplexing support.
 * **Okena** (Rust - 2024) (https://github.com/contember/okena): A fast, native terminal multiplexer built in Rust with GPUI.
 * **Seance** (Zig - 2024) (https://github.com/no1msd/seance): A scrolling terminal multiplexer that tracks your AI coding agents.
 * **terminator** (Python - GNOME) (https://gnome-terminator.org/): A terminal emulator specifically designed for terminal multiplexing, offering features for managing tabs and panes.
-* **Tilix** (D - 2015) (https://gnunn1.github.io/tilix-web/): A tiling terminal emulator for Linux using GTK+ 3.
 * **WezTerm** (Rust - 2017) (https://github.com/wez/wezterm): GPU-accelerated cross-platform terminal emulator and multiplexer.
 
 ### Historical / Proprietary
@@ -44,7 +42,6 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 ### Utilities 
 
 * **dekit (formerly mprocs)** (Rust - 2021) (https://github.com/pvolok/dekit): A PTY-backed TUI process manager for running and interacting with multiple commands in parallel.
-* **Terminal Workspace** (TypeScript/Electron - 2026) (https://github.com/EvanAI0331/terminal-workspace): A macOS desktop workspace for managing multiple project PTY terminals, saved launch commands, and project inspection.
 * **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
 
 ## License
