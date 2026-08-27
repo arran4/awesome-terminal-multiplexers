@@ -45,6 +45,7 @@ Note that we do not support terminals in general, unless the terminal has an int
 
 * **dekit (formerly mprocs)** (Rust - 2021) (https://github.com/pvolok/dekit): A PTY-backed TUI process manager for running and interacting with multiple commands in parallel.
 * **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
+* **Mobile SSH** (Java/Swift - 2026) (https://mobile-ssh.github.io): Drives tmux, Zellij and herdr sessions from Android and iOS: probes which multiplexers a host has, then lists and mutates sessions, windows/tabs and panes through each one's own control surface (tmux CLI, `zellij action --json`, `herdr api snapshot`).
 
 ## License
 
