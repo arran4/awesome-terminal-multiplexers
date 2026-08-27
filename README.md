@@ -45,6 +45,7 @@ Note that we do not support terminals in general, unless the terminal has an int
 
 * **dekit (formerly mprocs)** (Rust - 2021) (https://github.com/pvolok/dekit): A PTY-backed TUI process manager for running and interacting with multiple commands in parallel.
 * **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
+* **tmuxp** (Python - 2013) (https://github.com/tmux-python/tmuxp): A tmux session manager built on libtmux.
 
 ## License
 
