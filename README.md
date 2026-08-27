@@ -47,6 +47,11 @@ Some applications satisfy the technical definition of terminal multiplexing even
 
 * **TD/SMP** (Proprietary - DEC VT330/340): Introduced by DEC on their VT330/340 terminals, TD/SMP was proprietary and only widely supported by their own terminal servers.
 
+### Utilities
+
+* **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
+* **tmuxp** (Python - 2013) (https://github.com/tmux-python/tmuxp): A configuration and session manager for tmux, built on libtmux.
+
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
