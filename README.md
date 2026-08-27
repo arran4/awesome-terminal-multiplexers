@@ -2,7 +2,15 @@
 
 This list provides a curated selection of terminal multiplexers. Please contribute if you can.
 
-Note that we do not support terminals in general, unless the terminal has an integration with one or more terminal multiplexers, or a tui mode.
+### Scope and Inclusion Criteria
+
+To maintain focus, this list adheres to the following criteria:
+
+* **Terminal multiplexers:** Must directly manage PTYs and provide genuine session multiplexing, persistence, or detach/reattach behaviour.
+* **GUI applications:** Held to a much higher bar. Tabs, panes, embedded terminals, workspace restoration, remote persistence, or multiple PTYs alone do not qualify.
+* **Utilities:** May be included when they directly configure, control, restore, or automate a qualifying terminal multiplexer.
+* **Non-primary-purpose software:** May be listed separately only if it independently provides qualifying terminal-multiplexing functionality.
+* **Out of scope:** General terminal emulators, IDEs/editors, SSH/remote-access clients, screen-sharing/remote-desktop software, shells, TUIs, and similar tools whose apparent persistence or multiplexing comes from ordinary UI features or external session infrastructure.
 
 ### Terminal-based
 
@@ -45,6 +53,7 @@ Note that we do not support terminals in general, unless the terminal has an int
 
 * **dekit (formerly mprocs)** (Rust - 2021) (https://github.com/pvolok/dekit): A PTY-backed TUI process manager for running and interacting with multiple commands in parallel.
 * **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
+* **tmuxp** (Python - 2013) (https://github.com/tmux-python/tmuxp): A configuration and session manager for tmux, built on libtmux.
 
 ## License
 
