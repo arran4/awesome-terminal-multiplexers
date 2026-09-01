@@ -49,7 +49,7 @@ Some applications satisfy the technical definition of terminal multiplexing even
 
 ### Multiplexer clients, configuration and management tools
 
-These tools use, configure, or manage an existing terminal multiplexer rather than implementing the multiplexing themselves. This includes alternate clients and frontends, session browsers/controllers, configuration managers, and automation tools. General terminal or remote-access applications that only launch or attach to a multiplexer are not included here.
+These tools use, configure, or manage an existing terminal multiplexer rather than implementing the multiplexing themselves. Clients and frontends here expose the multiplexer itself as a first-class interface — for example, its sessions, windows/tabs, and panes — and let users navigate or manage that state directly. Configuration, session-management, and automation tools provide similarly substantial multiplexer-specific functionality. Generic terminal or remote-access applications with only launch or attach shortcuts are not included here.
 
 * **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
 * **tmuxp** (Python - 2013) (https://github.com/tmux-python/tmuxp): A configuration and session manager for tmux, built on libtmux.
