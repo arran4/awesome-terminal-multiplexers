@@ -2,9 +2,9 @@
 
 This list provides a curated selection of terminal multiplexers. Please contribute if you can.
 
-### Scope / inclusion criteria
+### How this list is organized
 
-To qualify, terminal-based software must directly and dynamically manage PTYs or equivalent terminal sessions. Graphical software must additionally support terminal sessions that can remain alive independently of the graphical frontend and later be reattached. Merely providing terminal tabs/panes or wrapping another multiplexer is insufficient.
+Terminal multiplexers directly manage PTYs or equivalent terminal sessions. Terminal-based multiplexers do this within a terminal interface, while graphical / detachable multiplexers keep their terminal sessions alive independently of the graphical frontend so they can be reattached later. Software that uses, configures, or manages an existing multiplexer rather than implementing the multiplexing itself is listed separately under **Multiplexer clients, configuration and management tools**.
 
 ### Terminal multiplexers
 
@@ -52,7 +52,9 @@ Some applications satisfy the technical definition of terminal multiplexing even
 
 * **TD/SMP** (Proprietary - DEC VT330/340): Introduced by DEC on their VT330/340 terminals, TD/SMP was proprietary and only widely supported by their own terminal servers.
 
-### Utilities
+### Multiplexer clients, configuration and management tools
+
+These tools use, configure, or manage an existing terminal multiplexer rather than implementing the multiplexing themselves. Clients and frontends here expose the multiplexer itself as a first-class interface — for example, its sessions, windows/tabs, and panes — and let users navigate or manage that state directly. Configuration, session-management, and automation tools provide similarly substantial multiplexer-specific functionality. Generic terminal or remote-access applications with only launch or attach shortcuts are not included here.
 
 * **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
 * **tmuxp** (Python - 2013) (https://github.com/tmux-python/tmuxp): A configuration and session manager for tmux, built on libtmux.
