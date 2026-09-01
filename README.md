@@ -4,7 +4,7 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 
 ### How this list is organized
 
-Terminal multiplexers directly manage PTYs or equivalent terminal sessions. Terminal-based multiplexers do this within a terminal interface, while graphical / detachable multiplexers keep their terminal sessions alive independently of the graphical frontend so they can be reattached later. Software that uses or manages an existing multiplexer rather than implementing the multiplexing itself is listed separately under **Multiplexer clients and management tools**.
+Terminal multiplexers directly manage PTYs or equivalent terminal sessions. Terminal-based multiplexers do this within a terminal interface, while graphical / detachable multiplexers keep their terminal sessions alive independently of the graphical frontend so they can be reattached later. Software that uses, configures, or manages an existing multiplexer rather than implementing the multiplexing itself is listed separately under **Multiplexer clients, configuration and management tools**.
 
 ### Terminal-based multiplexers
 
@@ -47,9 +47,9 @@ Some applications satisfy the technical definition of terminal multiplexing even
 
 * **TD/SMP** (Proprietary - DEC VT330/340): Introduced by DEC on their VT330/340 terminals, TD/SMP was proprietary and only widely supported by their own terminal servers.
 
-### Multiplexer clients and management tools
+### Multiplexer clients, configuration and management tools
 
-These tools use or manage an existing terminal multiplexer rather than implementing the multiplexing themselves. This includes alternate clients and frontends, session browsers/controllers, configuration managers, and automation tools. General terminal or remote-access applications that only launch or attach to a multiplexer are not included here.
+These tools use, configure, or manage an existing terminal multiplexer rather than implementing the multiplexing themselves. This includes alternate clients and frontends, session browsers/controllers, configuration managers, and automation tools. General terminal or remote-access applications that only launch or attach to a multiplexer are not included here.
 
 * **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
 * **tmuxp** (Python - 2013) (https://github.com/tmux-python/tmuxp): A configuration and session manager for tmux, built on libtmux.
