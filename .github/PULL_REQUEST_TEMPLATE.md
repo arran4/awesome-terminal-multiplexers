@@ -8,7 +8,7 @@
 
 Briefly describe the functionality that makes the project relevant to the proposed section.
 
-For multiplexer clients and management tools, describe what the project does with the multiplexer beyond simply launching or attaching to it (for example: browsing sessions/windows/panes, switching, creating, renaming, splitting, killing, restoring, configuring, or automating them).
+For multiplexer clients, configuration and management tools, describe what the project does with the multiplexer beyond simply launching or attaching to it (for example: browsing sessions/windows/panes, switching, creating, renaming, splitting, killing, restoring, configuring, or automating them).
 
 ## Evidence
 
