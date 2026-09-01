@@ -47,9 +47,9 @@ Some applications satisfy the technical definition of terminal multiplexing even
 
 * **TD/SMP** (Proprietary - DEC VT330/340): Introduced by DEC on their VT330/340 terminals, TD/SMP was proprietary and only widely supported by their own terminal servers.
 
-### Multiplexer clients, frontends, configuration and session-management tools
+### Multiplexer clients and management tools
 
-These tools do not need to qualify as terminal multiplexers themselves. They must provide substantial, purpose-built functionality for directly using, controlling, configuring, restoring, or automating one or more qualifying multiplexers. This includes dedicated clients and frontends as well as configuration and session managers. Merely being a terminal, SSH, remote-access, tab/pane, or workspace application is not enough; incidental support such as only launching or attaching to a multiplexer is insufficient.
+These are tools for using or managing an existing terminal multiplexer rather than implementing the multiplexing themselves. This includes alternate clients and frontends, session browsers/controllers, configuration managers, and automation tools. They should add meaningful multiplexer-specific functionality beyond simply launching or attaching to a multiplexer.
 
 * **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
 * **tmuxp** (Python - 2013) (https://github.com/tmux-python/tmuxp): A configuration and session manager for tmux, built on libtmux.
