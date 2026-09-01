@@ -4,7 +4,7 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 
 ### Scope / inclusion criteria
 
-To qualify, terminal-based software must directly and dynamically manage PTYs or equivalent terminal sessions. Graphical software must additionally support terminal sessions that can remain alive independently of the graphical frontend and later be reattached. Merely providing terminal tabs/panes or wrapping another multiplexer is insufficient.
+To qualify as a terminal multiplexer, terminal-based software must directly and dynamically manage PTYs or equivalent terminal sessions. Graphical software must additionally support terminal sessions that can remain alive independently of the graphical frontend and later be reattached. Merely providing terminal tabs/panes or delegating the actual multiplexing to another program is insufficient for classification as a terminal multiplexer; related utilities are listed separately below.
 
 ### Terminal-based multiplexers
 
@@ -47,7 +47,9 @@ Some applications satisfy the technical definition of terminal multiplexing even
 
 * **TD/SMP** (Proprietary - DEC VT330/340): Introduced by DEC on their VT330/340 terminals, TD/SMP was proprietary and only widely supported by their own terminal servers.
 
-### Utilities
+### Utilities — configuration, control, restoration and automation
+
+Utilities do not need to qualify as terminal multiplexers themselves, but must provide substantial functionality specifically for configuring, controlling, restoring, automating, or otherwise integrating with one or more qualifying multiplexers. General terminal, SSH, remote-access, tab/pane, or workspace functionality is insufficient on its own.
 
 * **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
 * **tmuxp** (Python - 2013) (https://github.com/tmux-python/tmuxp): A configuration and session manager for tmux, built on libtmux.
