@@ -6,12 +6,10 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 
 To qualify, terminal-based software must directly and dynamically manage PTYs or equivalent terminal sessions. Graphical software must additionally support terminal sessions that can remain alive independently of the graphical frontend and later be reattached. Merely providing terminal tabs/panes or wrapping another multiplexer is insufficient.
 
-### Terminal-based multiplexers
+### Terminal multiplexers
 
 * **3mux** (Go - 2018) (https://github.com/aaronjanse/3mux): Terminal multiplexer inspired by i3.
-* **abduco** (C - 2014) (https://github.com/martanne/abduco): PTY-backed session manager supporting persistent sessions and detach/reattach; commonly paired with dvtm for pane/window management.
 * **Boo** (Zig - 2024) (https://github.com/coder/boo): A GNU screen style terminal multiplexer built on libghostty.
-* **dtach** (C - 2004) (https://github.com/crigler/dtach): A simple program that emulates the detach feature of screen.
 * **dvtm** (C - 2007) (https://github.com/martanne/dvtm): Tiling window management for the console.
 * **FbTerm** (C++ - 2008) (https://code.google.com/archive/p/fbterm/): A fast framebuffer based terminal emulator for Linux with multiplexing capabilities.
 * **GNU Screen** (C - 1987) (https://opensource.com/article/17/3/introduction-gnu-screen): The prototypical terminal multiplexer.
@@ -29,6 +27,13 @@ To qualify, terminal-based software must directly and dynamically manage PTYs or
 * **VWM** (C - 2007) (https://sourceforge.net/projects/vwm/): A window manager and user-interface for the console. Its extensible design allows for easy development of native applications as shared-library plugins.
 * **vwm** (C - 2015) (https://github.com/TragicWarrior/vwm): Virtual window manager for the terminal.
 * **Zellij** (Rust - 2019) (https://github.com/zellij-org/zellij): A modern terminal workspace with batteries included.
+
+### Detachable terminal session managers
+
+These tools directly own or supervise PTY-backed sessions and support detaching and later reattaching, but do not necessarily provide multi-window or multi-pane multiplexing.
+
+* **abduco** (C - 2014) (https://github.com/martanne/abduco): PTY-backed session manager supporting persistent sessions and detach/reattach; commonly paired with dvtm for pane/window management.
+* **dtach** (C - 2004) (https://github.com/crigler/dtach): A simple program that emulates the detach feature of screen.
 
 ### Graphical / detachable multiplexers
 
