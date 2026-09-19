@@ -46,6 +46,7 @@ Some applications satisfy the technical definition of terminal multiplexing even
 * **dekit (formerly mprocs)** (Rust - 2021) (https://github.com/pvolok/dekit): A PTY-backed TUI process manager for running and interacting with multiple commands in parallel.
 * **GNU Emacs** (C/Emacs Lisp - 1985) (https://www.gnu.org/software/emacs/): Can dynamically create PTY-backed terminal subprocesses/buffers and expose multiple terminal sessions, though its primary purpose is the Emacs editor/environment.
 * **Neovim** (C/Lua - 2014) (https://neovim.io/): Terminal buffers use its PTY/job infrastructure and can be created dynamically, but its primary purpose is text editing.
+* **Rune** (Go - 2026) (https://github.com/unstablebuild/rune): A GPU-accelerated IDE whose workspace UI also implements terminal multiplexing, directly managing multiple PTY-backed terminal sessions, tabs, and windows.
 * **Vim** (C - 1991) (https://www.vim.org/): When built with terminal support it can dynamically create and manage terminal jobs backed by PTYs, exposing multiple terminal sessions, though its primary purpose is text editing.
 
 ### Historical / proprietary
