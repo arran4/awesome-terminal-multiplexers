@@ -4,7 +4,16 @@ This list provides a curated selection of terminal multiplexers. Please contribu
 
 ### How this list is organized
 
-Terminal multiplexers directly manage PTYs or equivalent terminal sessions. Terminal-based multiplexers do this within a terminal interface, while graphical / detachable multiplexers keep their terminal sessions alive independently of the graphical frontend so they can be reattached later. Software that uses, configures, or manages an existing multiplexer rather than implementing the multiplexing itself is listed separately under **Multiplexer clients, configuration and management tools**.
+For this list, a **terminal multiplexer** multiplexes terminal interfaces, not merely processes or windows. Entries in the main terminal-multiplexer category must satisfy all of these requirements:
+
+* **Terminal-native interface:** the multiplexer itself runs inside a terminal and presents its multiplexed terminal sessions through that terminal interface.
+* **PTY-backed terminal instances:** it directly manages multiple PTY-backed terminal sessions, or equivalent terminal endpoints. For a remote session, ownership of the remote process and PTY may be delegated to SSH or a comparable transport; merely owning or supervising ordinary subprocesses is not sufficient.
+* **Direct terminal emulation:** it directly interprets each terminal stream and independently maintains the terminal state for each multiplexed instance, including at minimum its normal screen, alternate-screen state, and scrollback/history. An embedded terminal-emulation library counts as part of the implementation; delegating this state to another terminal emulator or an existing multiplexer does not.
+* **Switching continuity:** the user can select or switch between multiple independently maintained terminal instances without recreating them. Switching away and back must return to the same managed terminal instance and its continuing terminal state. Split panes and other layouts may supplement this, but layout alone is not a substitute for switching between multiplexed terminals.
+
+Detach/reattach, persistence after the multiplexer exits, daemon or client/server architecture, remote access, and simultaneous pane layouts are useful features but are **not requirements** for terminal multiplexing.
+
+Software that uses, configures, or manages an existing multiplexer rather than implementing the multiplexing itself is listed separately under **Multiplexer clients, configuration and management tools**. Software that performs related multiplexing but does not satisfy the terminal-native requirement may be listed separately when useful.
 
 ### Terminal multiplexers
 
@@ -30,18 +39,20 @@ Terminal multiplexers directly manage PTYs or equivalent terminal sessions. Term
 
 ### Detachable terminal session managers
 
-These tools directly own or supervise PTY-backed sessions and support detaching and later reattaching, but do not necessarily provide multi-window or multi-pane multiplexing.
+These tools directly own or supervise PTY-backed sessions and support detaching and later reattaching, but do not necessarily implement multiple independently emulated terminals with switching between them. Detach/reattach is treated here as a useful session-management feature, not as a defining requirement of terminal multiplexing.
 
 * **abduco** (C - 2014) (https://github.com/martanne/abduco): PTY-backed session manager supporting persistent sessions and detach/reattach; commonly paired with dvtm for pane/window management.
 * **dtach** (C - 2004) (https://github.com/crigler/dtach): A simple program that emulates the detach feature of screen.
 
-### Graphical / detachable multiplexers
+### Related graphical terminal multiplexing
+
+These applications implement substantial terminal multiplexing or multiplexer-style session management but present it through a graphical frontend rather than running the multiplexing interface inside a terminal. They are kept separate from the terminal-native definition above. Detach/reconnect behavior may be noted as a feature, but is not what determines this classification.
 
 * **WezTerm** (Rust - 2017) (https://github.com/wez/wezterm): Terminal emulator with a separate multiplexer/server architecture supporting reconnectable multiplexing domains.
 
-### Technically valid, but not primary purpose
+### Terminal multiplexing as a secondary purpose
 
-Some applications satisfy the technical definition of terminal multiplexing even though multiplexing is not their primary purpose. These are listed separately to keep the main sections focused without arbitrarily excluding technically valid implementations.
+Applications in this section are expected to satisfy the same core terminal-multiplexer requirements above — terminal-native presentation, multiple PTY-backed terminal instances, direct per-instance terminal emulation, and switching continuity — even though terminal multiplexing is not their primary purpose. Merely embedding terminal processes, terminal widgets, or a generic split/tab interface is not enough.
 
 * **dekit (formerly mprocs)** (Rust - 2021) (https://github.com/pvolok/dekit): A PTY-backed TUI process manager for running and interacting with multiple commands in parallel.
 * **GNU Emacs** (C/Emacs Lisp - 1985) (https://www.gnu.org/software/emacs/): Can dynamically create PTY-backed terminal subprocesses/buffers and expose multiple terminal sessions, though its primary purpose is the Emacs editor/environment.
