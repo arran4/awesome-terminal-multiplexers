@@ -5,18 +5,19 @@ on:
     - cron: '0 0 1 * *'
   workflow_dispatch:
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
 jobs:
   deploy_site:
     name: Publish website
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     uses: ./.github/workflows/hugo.yml
 
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
