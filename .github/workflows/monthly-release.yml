@@ -7,8 +7,14 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
+  deploy_site:
+    name: Publish website
+    uses: ./.github/workflows/hugo.yml
+
   release:
     runs-on: ubuntu-latest
     steps:
