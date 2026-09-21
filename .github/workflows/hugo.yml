@@ -4,13 +4,22 @@ on:
   push:
     branches:
       - main
-      - master
+  workflow_dispatch:
+  workflow_call:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: github-pages-deployment
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,12 +35,22 @@ jobs:
           mkdir -p content
           cp README.md content/_index.md
 
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
       - name: Build
         run: hugo --minify
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Verify generated home page
+        run: |
+          test -s public/index.html
+          grep -q 'Awesome Terminal Multiplexers' public/index.html
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          force_orphan: true
+          path: ./public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
