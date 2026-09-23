@@ -48,6 +48,7 @@ These tools directly own or supervise PTY-backed sessions and support detaching 
 
 These applications implement substantial terminal multiplexing or multiplexer-style session management but present it through a graphical frontend rather than running the multiplexing interface inside a terminal. They are kept separate from the terminal-native definition above. Detach/reconnect behavior may be noted as a feature, but is not what determines this classification.
 
+* **Rune** (Go - 2026) (https://github.com/unstablebuild/rune): A GPU-accelerated graphical IDE that directly manages multiple PTY-backed terminal sessions with its own terminal emulation and terminal tabs/windows.
 * **WezTerm** (Rust - 2017) (https://github.com/wez/wezterm): Terminal emulator with a separate multiplexer/server architecture supporting reconnectable multiplexing domains.
 
 ### Terminal multiplexing as a secondary purpose
