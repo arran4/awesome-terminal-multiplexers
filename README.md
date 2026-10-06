@@ -67,6 +67,7 @@ Applications in this section are expected to satisfy the same core terminal-mult
 
 These tools use, configure, or manage an existing terminal multiplexer rather than implementing the multiplexing themselves. Clients and frontends here expose the multiplexer itself as a first-class interface — for example, its sessions, windows/tabs, and panes — and let users navigate or manage that state directly. Configuration, session-management, and automation tools provide similarly substantial multiplexer-specific functionality. Generic terminal or remote-access applications with only launch or attach shortcuts are not included here.
 
+* **Mobile SSH** (Android/iOS) (https://mobile-ssh.github.io/): Graphical client for browsing and managing remote tmux, Zellij, and herdr sessions, windows/tabs, and panes over SSH.
 * **tmuxinator** (Ruby - 2010) (https://github.com/tmuxinator/tmuxinator): A tool to automate the creation of sessions with tmux.
 * **tmuxp** (Python - 2013) (https://github.com/tmux-python/tmuxp): A configuration and session manager for tmux, built on libtmux.
 
