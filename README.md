@@ -43,6 +43,7 @@ These tools directly own or supervise PTY-backed sessions and support detaching 
 
 * **abduco** (C - 2014) (https://github.com/martanne/abduco): PTY-backed session manager supporting persistent sessions and detach/reattach; commonly paired with dvtm for pane/window management.
 * **dtach** (C - 2004) (https://github.com/crigler/dtach): A simple program that emulates the detach feature of screen.
+* **Terminal Platform** (Rust - 2026) (https://github.com/777genius/terminal-platform): Embeddable terminal orchestration platform with a native PTY multiplexer (NativeMux) as the canonical model and honest, capability-gated adapters for tmux and Zellij; embeddable via a Rust core, Node/Electron SDK, and C ABI.
 
 ### Related graphical terminal multiplexing
 
